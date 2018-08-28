@@ -18,7 +18,16 @@
         </activity>
         <activity android:name=".View.MenuActivity" />
         <activity android:name=".View.PerguntaActivity" />
-        <activity android:name=".View.ResultadoActivity"></activity>
+        <activity android:name=".View.ResultadoActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".View.Pergunta1Activity"
+            android:label="@string/title_activity_pergunta1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

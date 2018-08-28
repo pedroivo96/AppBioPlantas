@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.MenuActivity">
+    tools:context=".View.MenuActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/primaryColor">
 
-</android.support.constraint.ConstraintLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ficha"
+            android:id="@+id/bFicha"
+            android:background="@drawable/button_background"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:textColor="@color/secondaryTextColor"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="10dp"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bChave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/life_savers"
+            android:textStyle="bold"
+            android:text="Chave"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_row="0"
+            android:layout_column="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código"
+            android:id="@+id/bCodigo"
+            android:background="@drawable/button_background"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:textColor="@color/secondaryTextColor"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="10dp"
+            android:layout_row="2"
+            android:layout_column="2"/>
+
+        <Button
+            android:id="@+id/bGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/life_savers"
+            android:textStyle="bold"
+            android:text="Guia"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <Button
+            android:id="@+id/bCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:background="@drawable/button_background"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:textColor="@color/secondaryTextColor"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="10dp"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+    </GridLayout>
+
+</LinearLayout>
