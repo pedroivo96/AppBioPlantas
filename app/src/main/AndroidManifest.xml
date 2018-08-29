@@ -27,7 +27,10 @@
         <activity
             android:name=".View.Pergunta1Activity"
             android:label="@string/title_activity_pergunta1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.MenuUsuarioActivity" />
+        <activity android:name=".View.LoginActivity" android:label="Login"/>
+        <activity android:name=".View.CadastroActivity" android:label="Cadastro"></activity>
     </application>
 
 </manifest>

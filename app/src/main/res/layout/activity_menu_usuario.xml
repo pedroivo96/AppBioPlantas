@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MenuUsuarioActivity"
+    android:background="@color/primaryColor"
+    android:gravity="center">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/bChave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_key_black"
+            android:textSize="@dimen/textSize_buttonMenu"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_pin_black"
+            android:id="@+id/bCodigo"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="10dp"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <ImageButton
+            android:id="@+id/bGuia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_edit_black"
+            android:layout_row="1"
+            android:layout_column="2"/>
+
+        <ImageButton
+            android:id="@+id/bFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_feedback_black"
+            android:layout_row="3"
+            android:layout_column="0"/>
+
+        <ImageButton
+            android:id="@+id/bPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_person_black"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+        <ImageButton
+            android:id="@+id/bGlossario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_help_black"
+            android:layout_row="4"
+            android:layout_column="1"/>
+
+        <ImageButton
+            android:id="@+id/bListaChaves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:src="@mipmap/ic_list_black"
+            android:layout_row="3"
+            android:layout_column="2"/>
+
+    </GridLayout>
+
+</LinearLayout>
