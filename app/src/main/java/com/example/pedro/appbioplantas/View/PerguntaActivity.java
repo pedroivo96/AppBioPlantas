@@ -42,7 +42,7 @@ public class PerguntaActivity extends AppCompatActivity implements Serializable 
         navigationList.add("Opcao3");
         navigationList.add("Opcao4");
 
-        inicializarPerguntas();
+        //inicializarPerguntas();
 
         respostas = findViewById(R.id.respostas);
 
@@ -54,6 +54,7 @@ public class PerguntaActivity extends AppCompatActivity implements Serializable 
 
         AdapterRespostas adapterRespostas = new AdapterRespostas(getContext(), perguntaAtual.getRespostas());
         respostas.setAdapter(adapterRespostas);
+
 
         respostas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -91,6 +92,7 @@ public class PerguntaActivity extends AppCompatActivity implements Serializable 
         return this;
     }
 
+    /*
     private void inicializarPerguntas(){
 
         perguntas = new ArrayList<>();
@@ -186,6 +188,7 @@ public class PerguntaActivity extends AppCompatActivity implements Serializable 
         perguntas.add(p10);
 
     }
+    */
 
     private Pergunta obterPerguntaPorId(int id){
 

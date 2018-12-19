@@ -29,8 +29,19 @@
             android:label="@string/title_activity_pergunta1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".View.MenuUsuarioActivity" />
-        <activity android:name=".View.LoginActivity" android:label="Login"/>
-        <activity android:name=".View.CadastroActivity" android:label="Cadastro"></activity>
+        <activity
+            android:name=".View.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".View.CadastroActivity"
+            android:label="Cadastro" />
+        <activity android:name=".View.PrimeiraChaveActivity" />
+        <activity
+            android:name=".View.DecisaoChavesActivity"
+            android:label="@string/title_activity_decisao_chaves"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".View.MenuPrimeiraChaveActivity" />
+        <activity android:name=".View.ChaveActivity"></activity>
     </application>
 
 </manifest>

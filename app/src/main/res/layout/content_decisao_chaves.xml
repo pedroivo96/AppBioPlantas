@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.DecisaoChavesActivity"
+    tools:showIn="@layout/app_bar_decisao_chaves">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".View.PerguntaActivity"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/primaryColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolhendo chave ..."
+            android:textAlignment="center"
+            android:textSize="@dimen/textSize_nomeChave"
+            android:id="@+id/tTituloPagina"
+            android:layout_alignParentTop="true"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lRespostas"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

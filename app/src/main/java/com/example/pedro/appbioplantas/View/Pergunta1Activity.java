@@ -29,6 +29,7 @@ public class Pergunta1Activity extends AppCompatActivity
 
     private ArrayList<Pergunta> perguntas;
     private ArrayList<Resposta> respostasEscolhidas;
+    
     private Pergunta perguntaAtual;
 
     private ListView respostas;
@@ -51,7 +52,7 @@ public class Pergunta1Activity extends AppCompatActivity
 
         respostasEscolhidas = new ArrayList<>();
 
-        inicializarPerguntas();
+        //inicializarPerguntas();
 
         respostas = findViewById(R.id.respostas);
 
@@ -134,6 +135,7 @@ public class Pergunta1Activity extends AppCompatActivity
         return this;
     }
 
+    /*
     private void inicializarPerguntas(){
 
         perguntas = new ArrayList<>();
@@ -229,6 +231,7 @@ public class Pergunta1Activity extends AppCompatActivity
         perguntas.add(p10);
 
     }
+    */
 
     private Pergunta obterPerguntaPorId(int id){
 

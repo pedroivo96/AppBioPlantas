@@ -8,6 +8,7 @@
     android:background="@color/primaryColor"
     android:gravity="center">
 
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,70 +16,138 @@
         android:columnCount="3"
         android:layout_gravity="center">
 
-        <ImageButton
-            android:id="@+id/bChave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_key_black"
-            android:textSize="@dimen/textSize_buttonMenu"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="1"
-            android:layout_column="0"/>
+            android:layout_column="0">
+            <ImageButton
+                android:id="@+id/bChave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_key_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chave"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_pin_black"
-            android:id="@+id/bCodigo"
-            android:background="@drawable/button_background"
-            android:layout_marginBottom="10dp"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="0"
-            android:layout_column="1"/>
+            android:layout_column="1">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pin_white"
+                android:id="@+id/bCodigo"
+                android:background="@drawable/button_background"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gerar PIN"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/bGuia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_edit_black"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="1"
-            android:layout_column="2"/>
+            android:layout_column="2">
+            <ImageButton
+                android:id="@+id/bGuia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_edit_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guia"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/bFeedback"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_feedback_black"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="3"
-            android:layout_column="0"/>
+            android:layout_column="0">
+            <ImageButton
+                android:id="@+id/bFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_feedback_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/bPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_person_black"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="2"
-            android:layout_column="1"/>
+            android:layout_column="1">
+            <ImageButton
+                android:id="@+id/bPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_person_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfil"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/bGlossario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_help_black"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="4"
-            android:layout_column="1"/>
+            android:layout_column="1">
+            <ImageButton
+                android:id="@+id/bGlossario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_help_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glossário"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/bListaChaves"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:src="@mipmap/ic_list_black"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_row="3"
-            android:layout_column="2"/>
+            android:layout_column="2">
+            <ImageButton
+                android:id="@+id/bListaChaves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:src="@mipmap/ic_list_white"
+                android:elevation="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suas Chaves"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
     </GridLayout>
 

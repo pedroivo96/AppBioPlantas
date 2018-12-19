@@ -4,14 +4,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Pergunta implements Serializable{
+
     int id;
-    int numChave;
+    String pergunta;
     ArrayList<Resposta> respostas;
 
-    public Pergunta(int id, int numChave, ArrayList<Resposta> respostas){
-        this.id = id;
-        this.numChave = numChave;
-        this.respostas = respostas;
+    public Pergunta(){
+        respostas = new ArrayList<>();
     }
 
     public int getId() {
@@ -22,12 +21,12 @@ public class Pergunta implements Serializable{
         this.id = id;
     }
 
-    public int getNumChave() {
-        return numChave;
+    public String getPergunta() {
+        return pergunta;
     }
 
-    public void setNumChave(int numChave) {
-        this.numChave = numChave;
+    public void setPergunta(String pergunta) {
+        this.pergunta = pergunta;
     }
 
     public ArrayList<Resposta> getRespostas() {

@@ -1,0 +1,44 @@
+> 2/1 - 1 ?
+* Folhas_pinatifidas,_pinatisectas_ou_pseudo_compostas - Cycadaceae
+* Folhas_flabeliformes_ou_lobadas - Ginkgoaceae
+* Folhas_inteiras_ou_reduzidas_a_escamas - 2
+
+> 2/2 - 2 ?
+* Folhas_alternas,_espiraladas_aos_pares_ou_em_feixes - 3
+* Folhas_opostas - 7
+* Folhas_verticiladas - Cupressaceae
+
+> 2/3 - 3 ?
+* Folhas_ovaes,_eliticas,_lanceoladas,_deltoides_ou_de_base_assimétrica - Araucariaceae
+* Folhas_oblongas_as_vezes_um_pouco_curvas - 4
+* Folhas_aciculares - 5
+
+> 2/4 - 4 ?
+* Folhas_até_2_milímetros_de_largura - Taxodiaceae
+* Folhas_de_mais_de_3_milímetros_de_largura - Podocarpaceae
+
+> 2/5 -  5 ?
+* Folhas_isoladas - 6
+* Folhas_aos_pares_ou_em_feixes - Pinaceae
+
+> 2/6 - 6 ?
+* Folhas_retas - Taxodiaceae
+* Folhas_curvas - Araucariaceae
+
+> 2/7 - 7 ?
+* Folhas_aciculares - Araucariaceae
+* Folhas_laminares,_oblongas_ou_lanceoladas - Cupressaceae
+* Folhas_eliticas - 8
+* Folhas_reduzidas_a_escamas - 9
+
+> 2/8 - 8 ?
+* Folhas_paralelinerveas_ou_curvinerveas - Araucariaceae
+* Folhas_peninerveas - Gnetaceae
+
+> 2/9 - 9 ?
+* Folhas_maiores_do_que_os_entrenós - Cupressaceae
+* Folhas_menores_do_que_os_entrenós - 10
+
+> 2/10 - 10 ?
+* Folhas_decurrentes - Cupressaceae
+* Folhas_não_decurrentes - Ephedraceae
