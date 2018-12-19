@@ -44,11 +44,15 @@ public class ChaveActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        int chaveAtualIndex = 2;
+        Log.i("TAG", "Tamanho da lista de Chaves = "+chaves.size());
+        Log.i("TAG", "Cod da Chave = "+chaves.get(0).getId());
+        Log.i("TAG", "Número de Perguntas da Chave 2 = "+chaves.get(0).getPerguntas().size());
+
+        int chaveAtualCod = 2;
         Chave chaveAtual = new Chave();
 
         for(int i = 0; i < chaves.size(); i++){
-            if(chaveAtualIndex == chaves.get(i).getId()){
+            if(chaveAtualCod == chaves.get(i).getId()){
                 chaveAtual = chaves.get(i);
             }
         }
@@ -119,7 +123,6 @@ public class ChaveActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
         int codChaveAtual = 0;
 
         for(int i = 0; i < mLines.size(); i++){
@@ -172,13 +175,12 @@ public class ChaveActivity extends AppCompatActivity {
                 String[] array = mLines.get(i).split("-");
                 String enunciado = array[0].substring(1).trim().replaceAll("_", " ");
 
-                int proximaPergunta;
+                int proximaPergunta = -1;
                 String resultado = "";
 
                 try{
                     proximaPergunta = Integer.parseInt(array[1].trim());
                 }catch(Exception e){
-                    proximaPergunta = -1;
                     resultado = array[1].trim();
                 }
 
@@ -194,9 +196,6 @@ public class ChaveActivity extends AppCompatActivity {
                 chaves.get(indexUltimaChave).getPerguntas().get(indexUltimaPergunta).getRespostas().add(r);
             }
         }
-
-        Log.i("TAG", "Tamanho de Perguntas = "+chaves.get(0).getPerguntas().size());
-        Log.i("TAG", "Tamanho de Chaves = "+chaves.size());
 
         return chaves;
     }
