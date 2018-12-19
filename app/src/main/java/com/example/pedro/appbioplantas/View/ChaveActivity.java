@@ -162,6 +162,7 @@ public class ChaveActivity extends AppCompatActivity {
 
                 int indexUltimaChave = chaves.size() - 1;
 
+                //Adiciona a pergunta na última chave adicionada
                 chaves.get(indexUltimaChave).getPerguntas().add(pergunta);
             }
 
@@ -189,9 +190,13 @@ public class ChaveActivity extends AppCompatActivity {
                 int indexUltimaChave = chaves.size() - 1;
                 int indexUltimaPergunta = chaves.get(indexUltimaChave).getPerguntas().size() - 1;
 
+                //Adiciona a Resposta na última pergunta da última chave
                 chaves.get(indexUltimaChave).getPerguntas().get(indexUltimaPergunta).getRespostas().add(r);
             }
         }
+
+        Log.i("TAG", "Tamanho de Perguntas = "+chaves.get(0).getPerguntas().size());
+        Log.i("TAG", "Tamanho de Chaves = "+chaves.size());
 
         return chaves;
     }
