@@ -16,32 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.MenuActivity" />
-        <activity android:name=".View.PerguntaActivity" />
         <activity android:name=".View.ResultadoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity
-            android:name=".View.Pergunta1Activity"
-            android:label="@string/title_activity_pergunta1"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".View.MenuUsuarioActivity" />
         <activity
             android:name=".View.LoginActivity"
-            android:label="Login" />
+            android:label="Login"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity
             android:name=".View.CadastroActivity"
-            android:label="Cadastro" />
-        <activity android:name=".View.PrimeiraChaveActivity" />
-        <activity
-            android:name=".View.DecisaoChavesActivity"
-            android:label="@string/title_activity_decisao_chaves"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".View.MenuPrimeiraChaveActivity" />
-        <activity android:name=".View.ChaveActivity"></activity>
+            android:label="Cadastro"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".View.MenuTipoChaveActivity" />
+        <activity android:name=".View.ChavesActivity" />
+        <activity android:name=".View.PerguntasActivity"></activity>
     </application>
 
 </manifest>

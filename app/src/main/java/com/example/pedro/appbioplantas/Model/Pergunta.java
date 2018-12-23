@@ -5,12 +5,12 @@ import java.util.ArrayList;
 
 public class Pergunta implements Serializable{
 
-    int id;
-    String pergunta;
-    ArrayList<Resposta> respostas;
+    private int id;
+    private String enunciado;
 
-    public Pergunta(){
-        respostas = new ArrayList<>();
+    public Pergunta(int id, String enunciado) {
+        this.id = id;
+        this.enunciado = enunciado;
     }
 
     public int getId() {
@@ -21,19 +21,11 @@ public class Pergunta implements Serializable{
         this.id = id;
     }
 
-    public String getPergunta() {
-        return pergunta;
+    public String getEnunciado() {
+        return enunciado;
     }
 
-    public void setPergunta(String pergunta) {
-        this.pergunta = pergunta;
-    }
-
-    public ArrayList<Resposta> getRespostas() {
-        return respostas;
-    }
-
-    public void setRespostas(ArrayList<Resposta> respostas) {
-        this.respostas = respostas;
+    public void setEnunciado(String enunciado) {
+        this.enunciado = enunciado;
     }
 }

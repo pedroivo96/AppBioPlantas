@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.pedro.appbioplantas.R;
 
-public class MenuPrimeiraChaveActivity extends AppCompatActivity {
+public class MenuTipoChaveActivity extends AppCompatActivity {
 
     private Button bChavesPrimarias;
     private Button bChavesSecundarias;
@@ -25,11 +25,8 @@ public class MenuPrimeiraChaveActivity extends AppCompatActivity {
         bChavesPrimarias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(getContext(), DecisaoChavesActivity.class);
-                //intent.putExtra("opcao",1);
-                //startActivity(intent);
-
-                Intent intent = new Intent(getContext(), ChaveActivity.class);
+                Intent intent = new Intent(getContext(), ChavesActivity.class);
+                intent.putExtra("tipoChave",1);
                 startActivity(intent);
             }
         });
@@ -37,8 +34,8 @@ public class MenuPrimeiraChaveActivity extends AppCompatActivity {
         bChavesSecundarias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), DecisaoChavesActivity.class);
-                intent.putExtra("opcao",2);
+                Intent intent = new Intent(getContext(), ChavesActivity.class);
+                intent.putExtra("tipoChave",2);
                 startActivity(intent);
             }
         });

@@ -7,29 +7,30 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.pedro.appbioplantas.Model.Chave;
 import com.example.pedro.appbioplantas.Model.Resposta;
 import com.example.pedro.appbioplantas.R;
 
 import java.util.ArrayList;
 
-public class AdapterRespostasEscolhidas extends BaseAdapter {
+public class AdapterChaves extends BaseAdapter {
 
     private Context context;
-    private ArrayList<String> respostasEscolhidas;
+    private ArrayList<Chave> chaves;
 
-    public AdapterRespostasEscolhidas(Context context, ArrayList<String> respostasEscolhidas){
+    public AdapterChaves(Context context, ArrayList<Chave> chaves){
         this.context = context;
-        this.respostasEscolhidas = respostasEscolhidas;
+        this.chaves = chaves;
     }
 
     @Override
     public int getCount() {
-        return respostasEscolhidas.size();
+        return chaves.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return respostasEscolhidas.get(i);
+        return chaves.get(i);
     }
 
     @Override
@@ -40,10 +41,12 @@ public class AdapterRespostasEscolhidas extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        View view1 = LayoutInflater.from(context).inflate(R.layout.item_listview_respostas_escolhidas, viewGroup, false);
+        View view1 = LayoutInflater.from(context).inflate(R.layout.item_listview_chaves, viewGroup, false);
 
-        TextView tRespostaEscolhida = view1.findViewById(R.id.respostaEscolhida);
-        tRespostaEscolhida.setText(respostasEscolhidas.get(i));
+        Chave c = chaves.get(i);
+
+        TextView tResposta = view1.findViewById(R.id.resposta);
+        tResposta.setText(c.getNome());
 
         return view1;
     }

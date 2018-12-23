@@ -1,17 +1,10 @@
 package com.example.pedro.appbioplantas.View;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Path;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.ImageButton;
 
 import com.example.pedro.appbioplantas.R;
@@ -43,7 +36,7 @@ public class MenuUsuarioActivity extends AppCompatActivity {
         bChave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), MenuPrimeiraChaveActivity.class);
+                Intent intent = new Intent(getContext(), MenuTipoChaveActivity.class);
                 startActivity(intent);
             }
         });

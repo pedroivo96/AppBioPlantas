@@ -9,4 +9,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_decisao_chaves">DecisaoChavesActivity</string>
+    <string name="preference_file">preference_file</string>
+    <string name="saved_state">saved_state</string>
 </resources>

@@ -18,27 +18,24 @@ public class ResultadoActivity extends AppCompatActivity implements Serializable
 
     private TextView tNomePlanta;
     private ListView lPerguntasEscolhidas;
-
-    private ArrayList<Resposta> respostasEscolhidas;
+    private ArrayList<String> respostasEscolhidas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado);
 
-        Intent intent = getIntent();
-
-        String nomePlanta = intent.getStringExtra("nomePlanta");
-        respostasEscolhidas = (ArrayList<Resposta>) intent.getSerializableExtra("respostasEscolhidas");
-
         tNomePlanta = findViewById(R.id.tNomePlanta);
         lPerguntasEscolhidas = findViewById(R.id.lPerguntasEscolhidas);
 
-        AdapterRespostasEscolhidas adapterRespostasEscolhidas = new AdapterRespostasEscolhidas(getContext(),respostasEscolhidas);
-        lPerguntasEscolhidas.setAdapter(adapterRespostasEscolhidas);
+        Intent intent = getIntent();
+        String nomePlanta = intent.getStringExtra("NomePlanta");
+        respostasEscolhidas = (ArrayList<String>) intent.getSerializableExtra("RespostasEscolhidas");
 
         tNomePlanta.setText(nomePlanta);
 
+        AdapterRespostasEscolhidas adapterRespostasEscolhidas = new AdapterRespostasEscolhidas(getContext(), respostasEscolhidas);
+        lPerguntasEscolhidas.setAdapter(adapterRespostasEscolhidas);
     }
 
     private Context getContext(){

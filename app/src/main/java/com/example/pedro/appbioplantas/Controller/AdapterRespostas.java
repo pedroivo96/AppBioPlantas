@@ -46,7 +46,7 @@ public class AdapterRespostas extends BaseAdapter {
         Resposta r = respostas.get(i);
 
         TextView tResposta = view1.findViewById(R.id.resposta);
-        tResposta.setText(r.getEnunciado());
+        tResposta.setText(r.getOpcao());
 
         return view1;
     }

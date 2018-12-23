@@ -5,10 +5,13 @@ import java.util.ArrayList;
 public class Chave {
 
     private int id;
-    private ArrayList<Pergunta> perguntas;
+    private String nome;
+    private int tipo;
 
-    public Chave(){
-        perguntas = new ArrayList<>();
+    public Chave(int id, String nome, int tipo) {
+        this.id = id;
+        this.nome = nome;
+        this.tipo = tipo;
     }
 
     public int getId() {
@@ -19,11 +22,19 @@ public class Chave {
         this.id = id;
     }
 
-    public ArrayList<Pergunta> getPerguntas() {
-        return perguntas;
+    public String getNome() {
+        return nome;
     }
 
-    public void setPerguntas(ArrayList<Pergunta> perguntas) {
-        this.perguntas = perguntas;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
     }
 }

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements Runnable{
 
     @Override
     public void run() {
-        startActivity(new Intent(this, MenuActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
         finish();
     }
 }
