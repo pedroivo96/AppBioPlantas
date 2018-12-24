@@ -14,6 +14,7 @@
         <activity android:name=".View.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -27,10 +28,16 @@
         <activity android:name=".View.MenuTipoChaveActivity" />
         <activity android:name=".View.ChavesActivity" />
         <activity android:name=".View.PerguntasActivity" />
-        <activity android:name=".View.LoginGoogleActivity"
+        <activity
+            android:name=".View.LoginGoogleActivity"
             android:label="Cadastre-se" />
-        <activity android:name=".View.PerfilUserActivity"
+        <activity
+            android:name=".View.PerfilUserActivity"
             android:label="Seu Perfil" />
+        <activity
+            android:name=".View.MenuTeste"
+            android:label="@string/title_activity_menu_teste"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

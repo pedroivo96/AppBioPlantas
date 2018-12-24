@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuMinhasChaves"
+            android:icon="@mipmap/ic_list_black"
+            android:title="Minhas Chaves" />
+        <item
+            android:id="@+id/menuNovaChave"
+            android:icon="@mipmap/ic_key_black"
+            android:title="Nova Chave" />
+        <item
+            android:id="@+id/menuGerarPIN"
+            android:icon="@mipmap/ic_pin_black"
+            android:title="Gerar PIN" />
+    </group>
+
+    <item android:title="Informações">
+        <menu>
+            <item
+                android:id="@+id/menuGlossario"
+                android:icon="@mipmap/ic_help_black"
+                android:title="Glossário" />
+            <item
+                android:id="@+id/menuGuia"
+                android:icon="@mipmap/ic_edit_black"
+                android:title="Guia" />
+        </menu>
+    </item>
+
+    <item android:title="Usuário">
+        <menu>
+            <item
+                android:id="@+id/menuPerfil"
+                android:icon="@mipmap/ic_person_black"
+                android:title="Perfil" />
+            <item
+                android:id="@+id/menuSignOut"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

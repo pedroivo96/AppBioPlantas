@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.pedro.appbioplantas.R;
@@ -37,6 +38,7 @@ public class LoginGoogleActivity extends AppCompatActivity implements GoogleApiC
         setContentView(R.layout.activity_login_google);
 
         signInButton = (SignInButton) findViewById(R.id.btnLoginGoogle);
+        ((TextView) signInButton.getChildAt(0)).setText("Login com Google");
 
         firebaseAuth = FirebaseAuth.getInstance();
 
