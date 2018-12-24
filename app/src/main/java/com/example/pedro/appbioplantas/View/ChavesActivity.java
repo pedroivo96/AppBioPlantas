@@ -47,12 +47,10 @@ public class ChavesActivity extends AppCompatActivity {
 
         if(tipoChave == 1){
             chaves = bdControl.getChavesPrimarias();
-            Toast.makeText(getContext(), "Primarias: "+chaves.size(), Toast.LENGTH_SHORT).show();
         }
 
         if(tipoChave == 2){
             chaves = bdControl.getChavesSecundarias();
-            Toast.makeText(getContext(), "Secundarias: "+chaves.size(), Toast.LENGTH_SHORT).show();
         }
 
         if(tipoChave == -1){

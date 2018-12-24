@@ -35,8 +35,6 @@ public class PlantasBD extends SQLiteOpenHelper {
             SharedPreferences.Editor editor = sharedPref.edit();
             editor.putString(context.getString(R.string.saved_state), state);
             editor.commit();
-
-            Toast.makeText(context, "Primeiro uso!", Toast.LENGTH_SHORT).show();
         }
     }
 

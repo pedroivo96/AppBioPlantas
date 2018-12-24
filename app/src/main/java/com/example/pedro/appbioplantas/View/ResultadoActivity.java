@@ -13,6 +13,7 @@ import com.example.pedro.appbioplantas.R;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ResultadoActivity extends AppCompatActivity implements Serializable{
 
@@ -25,8 +26,8 @@ public class ResultadoActivity extends AppCompatActivity implements Serializable
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado);
 
-        tNomePlanta = findViewById(R.id.tNomePlanta);
-        lPerguntasEscolhidas = findViewById(R.id.lPerguntasEscolhidas);
+        tNomePlanta = (TextView) findViewById(R.id.tNomePlanta);
+        lPerguntasEscolhidas = (ListView) findViewById(R.id.lPerguntasEscolhidas);
 
         Intent intent = getIntent();
         String nomePlanta = intent.getStringExtra("NomePlanta");

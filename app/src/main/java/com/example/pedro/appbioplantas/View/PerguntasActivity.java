@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.pedro.appbioplantas.Controller.AdapterRespostas;
 import com.example.pedro.appbioplantas.Controller.BDControl;
@@ -35,8 +34,8 @@ public class PerguntasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perguntas);
 
-        enunciadoTextView = findViewById(R.id.enunciadoPergunta);
-        respostasListView = findViewById(R.id.respostas);
+        enunciadoTextView = (TextView) findViewById(R.id.enunciadoPergunta);
+        respostasListView = (ListView) findViewById(R.id.respostas);
 
         Intent intent = getIntent();
         nomeChaveSelecionada = intent.getStringExtra("NomeChaveSelecionada");

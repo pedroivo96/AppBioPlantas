@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "813299702027",
+    "firebase_url": "https://appbioplantas.firebaseio.com",
+    "project_id": "appbioplantas",
+    "storage_bucket": "appbioplantas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813299702027:android:d5da51690b0c5d7e",
+        "android_client_info": {
+          "package_name": "com.example.pedro.appbioplantas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813299702027-kutvah5p0fnhl8kd9oqej03agk618dva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pedro.appbioplantas",
+            "certificate_hash": "e69ec23fa51cb5d604d7aa5fc7a6cd515770a974"
+          }
+        },
+        {
+          "client_id": "813299702027-qa7srshom9tant2o3c00r3lo5lr0fcoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcBaiwNsOEVSNoKglV5gB6BjaRtb04ofM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813299702027-qa7srshom9tant2o3c00r3lo5lr0fcoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
